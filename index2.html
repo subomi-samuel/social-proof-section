@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <title>Frontend Mentor | Social proof section</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+        .attribution {
+        font-size: 11px;
+        text-align: center;
+        }
+        .attribution a {
+        color: hsl(228, 45%, 44%);
+        }
+        body{
+            height: 100vh;
+            background-color: #f0f0f0;
+            background-image: url("images/bg-pattern-top-desktop.svg");
+            background-repeat: no-repeat;
+            font-family: spartan;
+            display: flex;
+            align-items: center;
+        }
+        .container{
+            width: 71%;
+            height: 70%;
+            margin: auto;
+            border:2px solid #E3E3E3;
+            box-shadow: 10px 10px #E6E7E7;
+            background-image: url("images/bg-pattern-bottom-desktop.svg");
+            padding-left: 50px;
+        
+        }
+        .first{
+            display: flex;
+
+        }
+        .user{
+            font-family: spartan;
+            font-weight:1000;
+            font-size: 33px;
+            width:45%;
+            color:#581C52;
+            padding: 50px 0 0 50px;
+            margin-top: 10px;
+        }
+        .cont{
+            width: 40%;
+        padding: 30px 0 0 60px;
+        color: #A59BA2;
+        font-size: small;
+        }
+        .ima{
+            width: 32px;
+            height: 32px;
+            border-radius: 50px;
+            /* padding-top: 15px; */
+        }
+        .envelope{
+            border: 1px solid#581C52;
+            background-color: #581C52;
+            font-size: 10px;
+            margin-top: 20px;
+            margin-left: 60px;
+            /* padding-top: 15px; */
+            border-radius: 10px;
+            max-width: 230px;
+            height:150px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align:start;
+
+        }
+        .house{
+            display: flex;
+            padding-top: 20px;
+            /* padding-bottom: 15px; */
+            padding-left: 15px;
+        }
+        .comment{
+            display: flex;
+            padding-top: 20px;
+            /* position: fixed; */
+        }
+        .name{
+            padding-left:15px;
+            padding-bottom: 5px;
+            /* padding-top: 15px; */
+            color:#EECCEC;
+        }
+        .job{
+            padding-left: 15px;
+            /* padding-bottom: 30px; */
+            color:#A64182;
+        }
+        .text{
+            color:#EECCEC;
+            padding-bottom: 30px;
+            padding-right: 10px;
+            padding-top: 15px;
+
+        }
+           
+        .envelopee{
+            border: 1px solid#581C52;
+            background-color: #581C52;
+            font-size: 10px;
+            margin-top:30px;
+            margin-left: 20px;
+            padding-top: 10px;
+            border-radius: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 30px;
+            max-width: 220px;
+            height: 145px;
+            text-align: start;
+
+        }
+        .envelopeee{
+            border: 1px solid#581C52;
+            background-color: #581C52;
+            font-size: 10px;
+            margin-top: 40px;
+            margin-left: 20px;
+            max-width: 220px;
+            height:145px;
+            padding: 10px 20px 10px 30px;
+            border-radius: 10px;          
+            text-align: start;
+        }
+        .stars-one{
+            display: flex;
+            background-color: #F8F2F8;
+            border: 1px solid #F8F2F8;
+            font-size:10px;
+            padding: 10px;
+            color:#581C52;
+            font-weight: bolder;
+            margin-top: 50px;
+            /* margin-right: 250px; */
+            width:250px;
+            text-align: justify;
+            border-radius: 5px;
+            margin-right: 140px;
+        }
+        .rev{
+            padding-left: 10px;
+        }
+        .starss-two{
+            display: flex;
+            background-color: #F8F2F8;
+            border: 1px solid #F8F2F8;
+            font-size:10px;
+            padding: 10px;
+            color:#581C52;
+            font-weight: bolder;
+            margin-top: 10px;
+            /* position: absolute; */
+            /* right: 400px; */
+            /* top:290px; */
+            width:250px;
+            text-align: justify;
+            border-radius: 5px;
+            margin-right: 110px;
+        }
+        .starsss-three{
+            display: flex;
+            background-color: #F8F2F8;
+            border: 1px solid #F8F2F8;
+            font-size:10px;
+            padding: 10px;
+            color:#581C52;
+            font-weight: bolder;
+            margin-top: 10px;
+            /* position: absolute; */
+            /* right: 300px; */
+            /* top: 350px; */
+            width:250px;
+            text-align: center;
+            border-radius:5px;
+            margin-right: 80px;
+        }
+        .icons{
+            padding-right: 5px;
+            width: 12px;
+            height:12px;
+            
+        }
+        .reviews{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="first">
+                <div>
+                    <div class="user">10,000+ of our users love our products.</div>
+                    <div class="cont">
+                    We only provide great products combined with excellent customer service.
+                    See what our satisfied customers are saying about our services.
+                    </div>
+                </div>
+                <div class="reviews">
+                    <div class="stars-one">
+                       <div><img class="icons"src="images/icon-star.svg"></div> 
+                       <div><img class="icons"src="images/icon-star.svg"></div> 
+                       <div><img class="icons"src="images/icon-star.svg"></div> 
+                       <div><img class="icons"src="images/icon-star.svg"></div> 
+                       <div><img class="icons"src="images/icon-star.svg"></div> 
+                       <div class="rev">Rated 5 Stars in Reviews</div>
+                    </div>
+                    <div class="starss-two">
+                        <div><img class="icons"src="images/icon-star.svg"></div> 
+                        <div><img class="icons"src="images/icon-star.svg"></div> 
+                        <div><img class="icons"src="images/icon-star.svg"></div> 
+                        <div><img class="icons"src="images/icon-star.svg"></div> 
+                        <div><img class="icons"src="images/icon-star.svg"></div> 
+                        <div class="rev">Rated 5 Stars in Report Guru</div>
+                    </div>
+                    <div class="starsss-three">
+                        <div><img class="icons"src="images/icon-star.svg"></div> 
+                        <div><img class="icons"src="images/icon-star.svg"></div> 
+                        <div><img class="icons"src="images/icon-star.svg"></div> 
+                        <div><img class="icons"src="images/icon-star.svg"></div> 
+                        <div><img class="icons"src="images/icon-star.svg"></div> 
+                        <div class="rev">Rated 5 Stars in BestTech</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="comment">
+                <div class="envelope">
+                    <div class="house">
+                        <div> <img class="ima"src="images/image-colton.jpg"></div>
+                        <div>
+                            <div class="name">Colton Smith </div>
+                            <div class="job">Verified Buyer</div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        "We needed the same printed design as the one we had ordered a week prior.
+                        Not only did they find the original order, but we also received it in time.
+                        Excellent!"
+                    </div>
+                </div>
+                <div class="envelopee">
+                    <div class="house">
+                        <div> <img class="ima" src="images/image-irene.jpg"></div>
+                        <div>
+                            <div class="name">Irene Roberts </div>
+                            <div class="job">Verified Buyer</div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        "Customer service is always excellent and very quick turn around. Completely
+                         delighted with the simplicity of the purchase and the speed of delivery."
+                    </div>
+                </div>
+                
+                <div class="envelopeee">
+                    <div class="house"> 
+                        <div> <img  class="ima" src="images/image-anne.jpg"></div>
+                        <div>
+                            <div class="name">Anne Wallace</div>
+                            <div class="job">Verified Buyer</div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        "Put an order with this company and can only praise them for the very high
+                         standard. Will definitely use them again and recommend them to everyone!"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
